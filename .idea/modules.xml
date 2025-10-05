@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/L_12/CW_12_1/CW_12_1.iml" filepath="$PROJECT_DIR$/L_12/CW_12_1/CW_12_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L_13/CW_13_1/CW_13_1.iml" filepath="$PROJECT_DIR$/L_13/CW_13_1/CW_13_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L_14/CW_14_1/CW_14_1.iml" filepath="$PROJECT_DIR$/L_14/CW_14_1/CW_14_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L_15/CW_15_1/CW_15_1.iml" filepath="$PROJECT_DIR$/L_15/CW_15_1/CW_15_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L_16/CW_16_1/CW_16_1.iml" filepath="$PROJECT_DIR$/L_16/CW_16_1/CW_16_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L_17/CW_17_1/CW_17_1.iml" filepath="$PROJECT_DIR$/L_17/CW_17_1/CW_17_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L_18/CW_18/CW_18.iml" filepath="$PROJECT_DIR$/L_18/CW_18/CW_18.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L_19/CW_19_1/CW_19_1.iml" filepath="$PROJECT_DIR$/L_19/CW_19_1/CW_19_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L_20/CW_20_1/CW_20_1.iml" filepath="$PROJECT_DIR$/L_20/CW_20_1/CW_20_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L_21/CW_21_1/CW_21_1.iml" filepath="$PROJECT_DIR$/L_21/CW_21_1/CW_21_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L_21/CW_21_2/CW_21_2.iml" filepath="$PROJECT_DIR$/L_21/CW_21_2/CW_21_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L_22/CW_22_1/CW_22_1.iml" filepath="$PROJECT_DIR$/L_22/CW_22_1/CW_22_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L_22/CW_22_2/CW_22_2.iml" filepath="$PROJECT_DIR$/L_22/CW_22_2/CW_22_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L_23/CW_23_1/CW_23_1.iml" filepath="$PROJECT_DIR$/L_23/CW_23_1/CW_23_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L_24/CW_24_1/CW_24_1.iml" filepath="$PROJECT_DIR$/L_24/CW_24_1/CW_24_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Trening/OOP/ClassesAndObjects/ClassesAndObjects.iml" filepath="$PROJECT_DIR$/Trening/OOP/ClassesAndObjects/ClassesAndObjects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Trening/OOP/ConstructorgIncapsulation/ConstructorgIncapsulation.iml" filepath="$PROJECT_DIR$/Trening/OOP/ConstructorgIncapsulation/ConstructorgIncapsulation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L_21/HW/HW.iml" filepath="$PROJECT_DIR$/L_21/HW/HW.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L_23/HW_23_1/HW_23_1.iml" filepath="$PROJECT_DIR$/L_23/HW_23_1/HW_23_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L_24/HW_24/HW_24.iml" filepath="$PROJECT_DIR$/L_24/HW_24/HW_24.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L_24/Interfaces/Interfaces.iml" filepath="$PROJECT_DIR$/L_24/Interfaces/Interfaces.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L_21/Main_HW_21_TEST/Main_HW_21_TEST.iml" filepath="$PROJECT_DIR$/L_21/Main_HW_21_TEST/Main_HW_21_TEST.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L_22/Main_HW_22_1_TEST/Main_HW_22_1_TEST.iml" filepath="$PROJECT_DIR$/L_22/Main_HW_22_1_TEST/Main_HW_22_1_TEST.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L_23/Main_HW_23_TEST/Main_HW_23_TEST.iml" filepath="$PROJECT_DIR$/L_23/Main_HW_23_TEST/Main_HW_23_TEST.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Trening/OrderingInCafe/OrderingInCafe.iml" filepath="$PROJECT_DIR$/Trening/OrderingInCafe/OrderingInCafe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Trening/ParcelDeliveryService/ParcelDeliveryService.iml" filepath="$PROJECT_DIR$/Trening/ParcelDeliveryService/ParcelDeliveryService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Project_CW.iml" filepath="$PROJECT_DIR$/Project_CW.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Trening/Trening/Trening.iml" filepath="$PROJECT_DIR$/Trening/Trening/Trening.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HELP/untitled/untitled.iml" filepath="$PROJECT_DIR$/HELP/untitled/untitled.iml" />
+    </modules>
+  </component>
+</project>
