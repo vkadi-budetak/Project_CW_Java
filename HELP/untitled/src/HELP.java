@@ -1,14 +1,14 @@
 /**
 ГАРЯЧІ КЛАВІШИ
 
- command + option + A / ctr + alt + A - добавляє зміни в GitHub
+ command + option + A / ctr + alt + A - активуємо файл щоб читав GitHub
+ command + K - добавляэмо коміт -> Commit und Push
+
 
  command + D - дублювання рядка...
 fori - for
 iter - foreach
 /** + enter - і створюється коментар із параметрами
-
-
 
 
 
