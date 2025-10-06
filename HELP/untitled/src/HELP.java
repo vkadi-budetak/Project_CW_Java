@@ -1,7 +1,9 @@
 /**
 ГАРЯЧІ КЛАВІШИ
 
-command + D - дублювання рядка...
+ command + option + A / ctr + alt + A - добавляє зміни в GitHub
+
+ command + D - дублювання рядка...
 fori - for
 iter - foreach
 /** + enter - і створюється коментар із параметрами
