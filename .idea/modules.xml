@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/L_25/Abstract_Intersface/Abstract_Intersface.iml" filepath="$PROJECT_DIR$/L_25/Abstract_Intersface/Abstract_Intersface.iml" />
       <module fileurl="file://$PROJECT_DIR$/L_25/Animal_Polymorphism/Animal_Polymorphism.iml" filepath="$PROJECT_DIR$/L_25/Animal_Polymorphism/Animal_Polymorphism.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Trening/Book/Book.iml" filepath="$PROJECT_DIR$/Trening/Book/Book.iml" />
       <module fileurl="file://$PROJECT_DIR$/L_12/CW_12_1/CW_12_1.iml" filepath="$PROJECT_DIR$/L_12/CW_12_1/CW_12_1.iml" />
       <module fileurl="file://$PROJECT_DIR$/L_13/CW_13_1/CW_13_1.iml" filepath="$PROJECT_DIR$/L_13/CW_13_1/CW_13_1.iml" />
       <module fileurl="file://$PROJECT_DIR$/L_14/CW_14_1/CW_14_1.iml" filepath="$PROJECT_DIR$/L_14/CW_14_1/CW_14_1.iml" />
@@ -27,6 +28,7 @@
       <module fileurl="file://$PROJECT_DIR$/L_23/HW_23_1/HW_23_1.iml" filepath="$PROJECT_DIR$/L_23/HW_23_1/HW_23_1.iml" />
       <module fileurl="file://$PROJECT_DIR$/L_24/HW_24/HW_24.iml" filepath="$PROJECT_DIR$/L_24/HW_24/HW_24.iml" />
       <module fileurl="file://$PROJECT_DIR$/L_25/HW_25/HW_25.iml" filepath="$PROJECT_DIR$/L_25/HW_25/HW_25.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L_26/HW_26/HW_26.iml" filepath="$PROJECT_DIR$/L_26/HW_26/HW_26.iml" />
       <module fileurl="file://$PROJECT_DIR$/L_24/Interfaces/Interfaces.iml" filepath="$PROJECT_DIR$/L_24/Interfaces/Interfaces.iml" />
       <module fileurl="file://$PROJECT_DIR$/L_21/Main_HW_21_TEST/Main_HW_21_TEST.iml" filepath="$PROJECT_DIR$/L_21/Main_HW_21_TEST/Main_HW_21_TEST.iml" />
       <module fileurl="file://$PROJECT_DIR$/L_22/Main_HW_22_1_TEST/Main_HW_22_1_TEST.iml" filepath="$PROJECT_DIR$/L_22/Main_HW_22_1_TEST/Main_HW_22_1_TEST.iml" />
@@ -34,9 +36,10 @@
       <module fileurl="file://$PROJECT_DIR$/L_24/Main_HW_24_TEST/Main_HW_24_TEST.iml" filepath="$PROJECT_DIR$/L_24/Main_HW_24_TEST/Main_HW_24_TEST.iml" />
       <module fileurl="file://$PROJECT_DIR$/Trening/OrderingInCafe/OrderingInCafe.iml" filepath="$PROJECT_DIR$/Trening/OrderingInCafe/OrderingInCafe.iml" />
       <module fileurl="file://$PROJECT_DIR$/Trening/ParcelDeliveryService/ParcelDeliveryService.iml" filepath="$PROJECT_DIR$/Trening/ParcelDeliveryService/ParcelDeliveryService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L_26/Payment/Payment.iml" filepath="$PROJECT_DIR$/L_26/Payment/Payment.iml" />
       <module fileurl="file://$PROJECT_DIR$/Project_CW.iml" filepath="$PROJECT_DIR$/Project_CW.iml" />
       <module fileurl="file://$PROJECT_DIR$/Trening/Trening/Trening.iml" filepath="$PROJECT_DIR$/Trening/Trening/Trening.iml" />
-      <module fileurl="file://$PROJECT_DIR$/L_25/payment/payment.iml" filepath="$PROJECT_DIR$/L_25/payment/payment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L_26/array_list/array_list.iml" filepath="$PROJECT_DIR$/L_26/array_list/array_list.iml" />
       <module fileurl="file://$PROJECT_DIR$/HELP/untitled/untitled.iml" filepath="$PROJECT_DIR$/HELP/untitled/untitled.iml" />
     </modules>
   </component>
