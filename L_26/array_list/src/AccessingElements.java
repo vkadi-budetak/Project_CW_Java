@@ -8,7 +8,7 @@ public class AccessingElements {
         cities.add("Лондон");
 
         System.out.println("Город: " + cities);
-        // Получения элемента по интексу
+        // Получения элемента по индексу
         String firstCity = cities.get(0); // cities.getFirst() ПОЛУЧИТЬ
         String lastCity = cities.getLast(); // cities.get(cities.size()-1)
 
