@@ -16,6 +16,5 @@ public class Monkey implements Animal {
     @Override
     public String getSpecies() {
         return "Обезьяна";
-
     }
 }
