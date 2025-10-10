@@ -26,5 +26,21 @@ public class Main_Масиви {
             }
             System.out.println(fruit);
         }
+
+        /**
+         * Створення МАСИВІВ
+         *  Animal[] animals = new Animal[3];
+         *         animals[0] = new Lion();
+         *         animals[1] = new Elephant();
+         *         animals[2] = new Monkey();
+         *
+         * //Варіант 2
+         * // Створємо масив тварин - демонстрація поліморфізма
+         * Animal[] animals = {
+         *                new Lion(),
+         *                new Elephant(),
+         *                new Monkey()
+         *        };
+         */
     }
 }

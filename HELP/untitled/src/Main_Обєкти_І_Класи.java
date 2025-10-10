@@ -17,7 +17,11 @@ public class Main_Обєкти_І_Класи {
  */
 
 /**
- * //
+ * // МЕТОДИИИИИИИИИИИИИ!
+ *      public void/int... назваМетоду () {
+ *
+ *     }
+ *
  *     public void setName(String name) {
  *         if(name!=null && !name.isBlank()) this.name = name;
  *     }
@@ -37,6 +41,13 @@ public class Main_Обєкти_І_Класи {
  *     public void setId(int id) {
  *         if (id > 0) this.id = id;
  *     }
+ */
+
+/**
+ * // Необовязковий метод
+ * default void sleep() {
+ * System.out.println("");
+ * }
  */
 
 /**
@@ -72,6 +83,8 @@ public class Main_Обєкти_І_Класи {
  *         System.out.println("Cat eats meat");
  *  * }
  */
+
+
 
 /**
  * INTERFACES -(підписуємо контракт - имплементируем или внедряем) дозволяє оприділити якусь загальну ПОВЕДІНКА для класів
