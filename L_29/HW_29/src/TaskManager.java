@@ -24,16 +24,22 @@ public class TaskManager {
         while (it.hasNext()) {
             Task task = it.next();
             if (it.next().getId() == id) {
-                it.remove();
+                it.remove(); // безопасное удпления черед итератор
                 System.out.println("Объект удален: " + task);
                 return true;
             }
         }
+        System.out.println("Задача с ID " + id + " не найдена.");
         return false;
     }
 
     //Реализовую метод показать все задачи
     public void displayTasks() {
+        if (tasks.isEmpty()){
+            System.out.println("Список задач пуст");
+            return;
+        }
+
         System.out.println("=== Список задач ===");
         int i = 1;
         for (Task t : tasks) {
