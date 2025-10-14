@@ -1,15 +1,65 @@
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Демонстрационный класс, показывающий как дженерики решают проблемы типобезопасности.
+ *
+ * Этот класс демонстрирует, как использование дженериков (появившихся в Java 5)
+ * полностью устраняет проблемы, показанные в классе ProblemsBeforeGenerics.
+ * Дженерики обеспечивают типобезопасность на этапе компиляции и устраняют
+ * необходимость в явном приведении типов.
+ */
 public class SolutionWithGenerics {
+
+    /**
+     * Главный метод, демонстрирующий преимущества использования дженериков.
+     *
+     * @param args аргументы командной строки (не используются)
+     */
     public static void main(String[] args) {
+
+        // === РЕШЕНИЕ 1: ТИПОБЕЗОПАСНАЯ КОЛЛЕКЦИЯ ===
+        // Создаем список, который может содержать ТОЛЬКО строки
+        // Синтаксис <String> указывает тип элементов, которые может хранить список
         List<String> stringList = new ArrayList<>();
 
+        // === РЕШЕНИЕ 2: КОНТРОЛЬ ТИПОВ НА ЭТАПЕ КОМПИЛЯЦИИ ===
+        // Теперь мы можем добавлять только строки
         stringList.add("Строка");
-        //stringList.add(42);
+        stringList.add("Еще одна строка");
+        stringList.add("И третья строка");
 
-        for (String str : stringList){
-            System.out.println(str.toUpperCase());
+        // === ДЕМОНСТРАЦИЯ ЗАЩИТЫ ОТ ОШИБОК ===
+        // Следующая строка НЕ СКОМПИЛИРУЕТСЯ! Компилятор предотвратит ошибку!
+        // stringList.add(42);        // ОШИБКА КОМПИЛЯЦИИ: Cannot resolve method 'add(int)'
+        // stringList.add(3.14);      // ОШИБКА КОМПИЛЯЦИИ: Cannot resolve method 'add(double)'
+
+        System.out.println("=== ПРЕИМУЩЕСТВА ДЖЕНЕРИКОВ ===");
+        System.out.println("1. Типобезопасность на этапе компиляции");
+        System.out.println("2. Отсутствие необходимости в приведении типов");
+        System.out.println("3. Более читаемый и понятный код");
+        System.out.println();
+
+        // === РЕШЕНИЕ 3: АВТОМАТИЧЕСКОЕ ПРИВЕДЕНИЕ ТИПОВ ===
+        // Больше НЕ НУЖНО явное приведение типов!
+        // Компилятор ГАРАНТИРУЕТ, что все элементы - строки
+        System.out.println("Обработка элементов списка:");
+        for (String str : stringList) {
+            // Переменная str уже имеет тип String - никакого приведения типов!
+            // Никаких ClassCastException быть не может!
+            System.out.println("Строка в верхнем регистре: " + str.toUpperCase());
+        }
+
+        // === ДОПОЛНИТЕЛЬНАЯ ДЕМОНСТРАЦИЯ ТИПОБЕЗОПАСНОСТИ ===
+        System.out.println("\nИнформация о списке:");
+        System.out.println("Размер списка: " + stringList.size());
+        System.out.println("Тип элементов гарантированно: String");
+
+        // Демонстрируем безопасное получение элементов
+        if (!stringList.isEmpty()) {
+            String firstElement = stringList.get(0); // Автоматически String, без приведения!
+            System.out.println("Первый элемент: " + firstElement);
+            System.out.println("Длина первого элемента: " + firstElement.length());
         }
     }
 }

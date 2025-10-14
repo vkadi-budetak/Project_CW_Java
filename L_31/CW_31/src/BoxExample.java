@@ -1,33 +1,33 @@
+import lessons.lesson_31.lesson.Box;
+
 import java.util.Arrays;
 import java.util.List;
 
 public class BoxExample {
     public static void main(String[] args) {
         // Создаем коробку для строк
-        Box<String> stringBox = new Box<>("Привет, мир");
+        lessons.lesson_31.lesson.Box<String> stringBox = new lessons.lesson_31.lesson.Box<>("Привет, мир!");
         stringBox.displayInfo();
 
         // Создаем коробку для чисел
-        Box<Integer> integerBox = new Box<>(42);
+        lessons.lesson_31.lesson.Box<Integer> integerBox = new lessons.lesson_31.lesson.Box<>(42);
         integerBox.displayInfo();
 
         // Создаем коробку для списков
-        Box<List<String>> listBox = new Box<>(Arrays.asList(
+        lessons.lesson_31.lesson.Box<List<String>> listBox = new lessons.lesson_31.lesson.Box<>(Arrays.asList(
                 "Java", "Python", "C++"
         ));
         listBox.displayInfo();
 
         //
         System.out.println("\n=== Новое ===");
-        Box<Integer> numberBox = Box.createBox(123);
+        lessons.lesson_31.lesson.Box<Integer> numberBox = lessons.lesson_31.lesson.Box.createBox(123);
         System.out.println("\nСодержимое numberBox: " + numberBox.getContent());
 
-        Box<String> stringBox1 = Box.createBox("\nПривет, Дженерики!");
+        lessons.lesson_31.lesson.Box<String> stringBox1 = lessons.lesson_31.lesson.Box.createBox("\nПривет, Дженерики!");
         System.out.println("Содержимое stringBox1: " + stringBox1.getContent());
 
-        Box<Double> doubleBox = Box.createBox(3.14);
+        lessons.lesson_31.lesson.Box<Double> doubleBox = Box.createBox(3.14);
         System.out.println("\nСодержимое doubleBox: " + doubleBox.getContent());
-
-
     }
 }

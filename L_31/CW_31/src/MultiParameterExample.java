@@ -1,18 +1,50 @@
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * Демонстрационный класс для показа работы с многопараметрическими дженериками.
+ *
+ * Этот класс демонстрирует использование обобщенного класса Pair<K, V>,
+ * который может хранить два значения разных типов. Показывает гибкость
+ * дженериков при работе с различными комбинациями типов данных.
+ */
 public class MultiParameterExample {
+
+    /**
+     * Главный метод программы, демонстрирующий различные варианты использования
+     * многопараметрического обобщенного класса Pair.
+     *
+     * @param args аргументы командной строки (не используются)
+     */
     public static void main(String[] args) {
+
+        // === ПРИМЕР 1: ПРОСТЫЕ ТИПЫ (String, Integer) ===
+        // Создаем пару для хранения имени студента и его возраста
+        // K = String (ключ - имя), V = Integer (значение - возраст)
         Pair<String, Integer> studentPair = Pair.of("Иванов", 25);
         System.out.println("Данные студента: " + studentPair);
 
+        // === ПРИМЕР 2: ЧИСЛОВЫЕ И ЛОГИЧЕСКИЕ ТИПЫ (Double, Boolean) ===
+        // Создаем пару для хранения числа и логического значения
+        // K = Double (ключ - число), V = Boolean (значение - статус)
         Pair<Double, Boolean> statusPair = Pair.of(3.14, true);
 
+        // === ПРИМЕР 3: СЛОЖНЫЕ ТИПЫ (Long, List<String>) ===
+        // Создаем список строк для демонстрации вложенных дженериков
         List<String> list = Arrays.asList("A", "B");
+
+        // Создаем пару, где значением является коллекция
+        // K = Long (ключ - идентификатор), V = List<String> (значение - список строк)
+        // Это демонстрирует, что дженерики могут быть вложенными
         Pair<Long, List<String>> complexPair = Pair.of(1000L, list);
 
+        // === ВЫВОД РЕЗУЛЬТАТОВ ===
         System.out.println("Комплексная пара: " + complexPair);
+
+        // Демонстрируем получение значения и его тип
         System.out.println("Тип значения в паре: " + complexPair.getValue());
-        System.out.println("Ключ: " + complexPair.getKey() + ", значени: " + complexPair.getValue());
+
+        // Демонстрируем раздельное получение ключа и значения
+        System.out.println("Ключ: " + complexPair.getKey() + ", значение: " + complexPair.getValue());
     }
 }
