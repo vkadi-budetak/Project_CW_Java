@@ -35,11 +35,13 @@ public class Book implements Comparable<Book> {
     }
 
     // Переопределяем equals() и hashCode()
+    // equals(Object) відповідає на запитання: чи є два об’єкти логічно однаковими?
+    // hashCode() повертає ціле число (хеш), яке колекції типу HashSet/HashMap використовують для швидкого пошуку.
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Book)) return false;
-        Book b = (Book) o;
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (!(obj instanceof Book)) return false;
+        Book b = (Book) obj;
         return year == b.year
                 && pages == b.pages
                 && Objects.equals(title, b.title)
@@ -47,7 +49,8 @@ public class Book implements Comparable<Book> {
     }
 
     @Override
-    public int hashCode() {
+    public int hashCode() { //  hashCode() повертає ціле число (хеш), яке колекції типу HashSet/HashMap використовують для швидкого пошуку.
+
         return Objects.hash(title, author, year, pages);
     }
 
