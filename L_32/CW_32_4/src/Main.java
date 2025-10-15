@@ -9,7 +9,6 @@ public class Main {
         List<MailDeliveryService> services = new ArrayList<>(Arrays.asList(new Pigeon(), new DHL(), new Email()));
 
         Scanner sc = new Scanner(System.in);
-
         System.out.println("=== Вас приветсвует Delivery Service ===");
         System.out.println("Вы можете отправить свою посылку:\n " +
                 "Pigeon -> Введите 1\n DHL -> Введите 2\n Email -> Введите 3\n Для выхода -> Введите 0");
