@@ -13,10 +13,10 @@ public class MainLL_Iterator_Index {
         for (int i = 0; i < size; i++) {
             integers.add(counter++);
         }
-//        System.out.println("=== PrintIterator ===");
-//        printUseIterator(integers);
-        System.out.println("=== PrintIndex ===");
-        printUseIndexes(integers);
+        System.out.println("=== PrintIterator ===");
+        printUseIterator(integers);
+//        System.out.println("=== PrintIndex ===");
+//        printUseIndexes(integers);
 
 
     }

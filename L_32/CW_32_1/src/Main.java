@@ -35,10 +35,5 @@ public class Main {
             System.out.print(s + " $$ ");
         }
         System.out.println();
-
-
-
-
-
     }
 }
