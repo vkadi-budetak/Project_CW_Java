@@ -43,5 +43,17 @@ public class Hotel {
     }
 
     // Метод - выборка из номерного фонда по типу комнаты
+    public List<Room> searchByTypePlain(RoomType type) {
+        if (type == null) return List.of();
+
+        List<Room> result = new ArrayList<>();
+        for (Room r : roomList) {
+            if (r.getType() == type) {
+                result.add(r);
+            }
+        }
+        return result;
+    }
+
 
 }

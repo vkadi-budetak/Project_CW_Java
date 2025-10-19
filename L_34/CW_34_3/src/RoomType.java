@@ -1,10 +1,10 @@
 public enum RoomType {
-    STANDARD("STANDARD", "стандартный однокомнатный номер", 50.0),
-    JUNIOR("JUNIOR", "однокомнатный номер с мини-кухней", 70.0),
-    SUITE("SUITE", "номер улучшенной планировки", 90.0),
-    STUDIO("STUDIO", "улучшенной планировки, из двух комнат", 120.0),
-    DELUXE("DELUXE", "номер повышенного комфорта", 200),
-    PRESIDENT("PRESIDENT", "самые роскошные номера", 250),
+    STANDARD("STANDARD", "стандартный однокомнатный номер - ", 50.0),
+    JUNIOR("JUNIOR", "однокомнатный номер с мини-кухней - ", 70.0),
+    SUITE("SUITE", "номер улучшенной планировки - ", 90.0),
+    STUDIO("STUDIO", "улучшенной планировки, из двух комнат - ", 120.0),
+    DELUXE("DELUXE", "номер повышенного комфорта - ", 200),
+    PRESIDENT("PRESIDENT", "самые роскошные номера - ",250),
     ;
 
     private  String name;
@@ -17,7 +17,6 @@ public enum RoomType {
         this.description = description;
         this.basePrice = basePrice;
     }
-
 
     //Геттери и Сеттери
     public String getName() {
@@ -46,6 +45,6 @@ public enum RoomType {
 
     @Override
     public String toString() {
-        return name + " (" + description + basePrice + " )";
+        return name + " (" + description + basePrice + " $)";
     }
 }

@@ -3,12 +3,14 @@ public class Room {
     private RoomType type;
     private int capacity;
 
+    //Конструктор
     public Room(String number, RoomType type, int capacity) {
         this.number = number;
         this.type = type;
         this.capacity = capacity;
     }
 
+    //Геттеры
     public String getNumber() {
         return number;
     }
@@ -23,6 +25,7 @@ public class Room {
 
     @Override
     public String toString() {
-        return "Комната № " + number + " " + type + " " + capacity;
+        return "\uD83C\uDFE8 Комната № " + number + " " + type +
+                "\n Количество спальных мест - " + capacity;
     }
 }
