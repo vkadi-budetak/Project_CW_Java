@@ -2,25 +2,24 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(RoomType.DELUXE);
-        Hotel hotel = Hotel.getInstance();
-//        System.out.println(hotel);
+        System.out.println(RoomType.STUDIO);
+        RoomType studio = RoomType.STUDIO;
 
-        System.out.println("==========Выборка DELUXE в Hotel=============");
-        List<Room> rooms = hotel.searchByTypePlain(RoomType.DELUXE);
+// ------------ singleton with static
+        Hotel hotel =Hotel.getInstance();
+        System.out.println(hotel);
+
+        List<Room> rooms = hotel.roomsByType(RoomType.DELUXE);
         System.out.println(rooms);
 
-
-        //Дописать работу по получению выборки с определенного типа номеров и по аналогии
-        // проделать все тоже саме для енама-синглетона Hotel2
-
-        System.out.println("=== Использования enum ===");
+        // ------------ singleton with enum
+        System.out.println("-------------------------");
         Hotel2 hotel2 = Hotel2.INSTANCE;
-//        System.out.println(hotel2);
-
+        System.out.println(hotel2);
 
     }
 }
+
 
 /*
 
@@ -42,8 +41,8 @@ President – самые роскошные номера
 * описание, что означает тот или иной тип
 Реализовать класс комната.
 Реализовать в программе класс Hotel в который будет управлять списком из комнат.
-В программе должна быть возможность создать только один класс Hotel (т.е. он должен быть
-singleton)
+В программе должна быть возможность создать только один класс Hotel
+(т.е. он должен быть singleton)
 Реализовать метод, который выводит список номеров по заданной категории номера.
 
 ## Задача 2
@@ -57,7 +56,7 @@ adv.*****************
 В рамках данной задачи не нужно делать проверку корректности даты или интервала.
 Важно придумать архитектуру приложения.
 
-adv ********
+adv ***************************
     1 получение имеющегося списка бронирований в отеле
     2 вывод данных о брони
     3. добавление брони в список

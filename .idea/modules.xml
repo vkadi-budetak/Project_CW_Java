@@ -32,6 +32,9 @@
       <module fileurl="file://$PROJECT_DIR$/L_34/CW_34_3/CW_34_3.iml" filepath="$PROJECT_DIR$/L_34/CW_34_3/CW_34_3.iml" />
       <module fileurl="file://$PROJECT_DIR$/L_34/CW_34_Enums/CW_34_Enums.iml" filepath="$PROJECT_DIR$/L_34/CW_34_Enums/CW_34_Enums.iml" />
       <module fileurl="file://$PROJECT_DIR$/L_34/CW_34_Singleton/CW_34_Singleton.iml" filepath="$PROJECT_DIR$/L_34/CW_34_Singleton/CW_34_Singleton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L_35/CW_35_1/CW_35_1.iml" filepath="$PROJECT_DIR$/L_35/CW_35_1/CW_35_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L_35/CW_35_2/CW_35_2.iml" filepath="$PROJECT_DIR$/L_35/CW_35_2/CW_35_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L_36/CW_36_1/CW_36_1.iml" filepath="$PROJECT_DIR$/L_36/CW_36_1/CW_36_1.iml" />
       <module fileurl="file://$PROJECT_DIR$/TConsultation/C_21_Hostel/C_21_Hostel.iml" filepath="$PROJECT_DIR$/TConsultation/C_21_Hostel/C_21_Hostel.iml" />
       <module fileurl="file://$PROJECT_DIR$/L_25/Calculator/Calculator.iml" filepath="$PROJECT_DIR$/L_25/Calculator/Calculator.iml" />
       <module fileurl="file://$PROJECT_DIR$/Trening/OOP/ClassesAndObjects/ClassesAndObjects.iml" filepath="$PROJECT_DIR$/Trening/OOP/ClassesAndObjects/ClassesAndObjects.iml" />
@@ -66,6 +69,8 @@
       <module fileurl="file://$PROJECT_DIR$/L_29/Main_HW_29_TEST/Main_HW_29_TEST.iml" filepath="$PROJECT_DIR$/L_29/Main_HW_29_TEST/Main_HW_29_TEST.iml" />
       <module fileurl="file://$PROJECT_DIR$/L_30/Main_HW_30_TEST/Main_HW_30_TEST.iml" filepath="$PROJECT_DIR$/L_30/Main_HW_30_TEST/Main_HW_30_TEST.iml" />
       <module fileurl="file://$PROJECT_DIR$/L_32/Main_HW_32_TEST/Main_HW_32_TEST.iml" filepath="$PROJECT_DIR$/L_32/Main_HW_32_TEST/Main_HW_32_TEST.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L_34/Main_HW_34_TEST/Main_HW_34_TEST.iml" filepath="$PROJECT_DIR$/L_34/Main_HW_34_TEST/Main_HW_34_TEST.iml" />
+      <module fileurl="file://$PROJECT_DIR$/L_35/Main_HW_35_TEST/Main_HW_35_TEST.iml" filepath="$PROJECT_DIR$/L_35/Main_HW_35_TEST/Main_HW_35_TEST.iml" />
       <module fileurl="file://$PROJECT_DIR$/Trening/OrderingInCafe/OrderingInCafe.iml" filepath="$PROJECT_DIR$/Trening/OrderingInCafe/OrderingInCafe.iml" />
       <module fileurl="file://$PROJECT_DIR$/Trening/ParcelDeliveryService/ParcelDeliveryService.iml" filepath="$PROJECT_DIR$/Trening/ParcelDeliveryService/ParcelDeliveryService.iml" />
       <module fileurl="file://$PROJECT_DIR$/L_26/Payment/Payment.iml" filepath="$PROJECT_DIR$/L_26/Payment/Payment.iml" />
