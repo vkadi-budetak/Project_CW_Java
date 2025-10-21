@@ -1,7 +1,10 @@
+/**
+ * Внешний класс
+ */
 public class OuterClass {
-    // Пример статического  вложенного класса
-    private int x=1;
-    private static int y=1;
+    // Пример статического вложенного класса
+    private int x=1; //
+    private static int y=1; //
 
     public int getX() {
         return x;
@@ -22,6 +25,7 @@ public class OuterClass {
                 '}';
     }
 
+    // Пример статического вложенного класса
     static class InnerClass{
         public int sum(){
             display(y);

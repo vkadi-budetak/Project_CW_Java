@@ -25,14 +25,16 @@ public class Person {
                 '}';
     }
 
+    // Внутренний вложенный класс (нестатический)
     public class LoginPassword{
         private String login;
         private int password;
         private boolean flag=true;
 
+        //Конструктор
         public LoginPassword() {
-            this.login = name;
-            this.password = id;
+            this.login = name; // переприсваеваю name с родительського
+            this.password = id; // переприсваеваю id с родительського
         }
 
         public void display(){

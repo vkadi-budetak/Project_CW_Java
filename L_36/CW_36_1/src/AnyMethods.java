@@ -21,7 +21,7 @@ public class AnyMethods {
         if(res<Integer.MIN_VALUE || res> Integer.MAX_VALUE) return 0;
 
         return n1 + n2; // - // ПОЗИТИВНЫЕ СЦЕНАРИИ
-        // "1234" и "-34" -> (Должны получить) 1234 + (-34) = 1200
+        // "1234" и "-34" -> (Должны получить) 1234 + (-34) = 1200і
     }
 
 

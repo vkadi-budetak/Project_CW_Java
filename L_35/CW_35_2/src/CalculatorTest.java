@@ -1,50 +1,50 @@
 import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;
-// TestLast -> interface -> realization -> test
-// TestFirst -> interface -> test -> realization
-// TDD(test driven design) -> test -> interface -> realization
+// TestLast -> interface -> realization -> test (Тесты пишем в конце)
+// TestFirst -> interface -> test -> realization (То есть делаем интерфейс и реализация )
+// TDD(test driven design) -> test -> interface -> realization (Сначала делают тест, а потом интерфейс и реализация)
 
 
 class CalculatorTest {
 
-//    @Disabled
+//    @Disabled - отменяет использование TEST
     @Test
     public void testEquals(){
-        assertEquals(4,2+2);
-        assertEquals("Hello world", "Hello "+"world");
-        assertNotEquals(5,2+2);
+        assertEquals(4,2+2); // Проверяет ли будет 4 если 2+2
+        assertEquals("Hello world", "Hello "+"world"); // Проверяет ли будет Hello world -> Hello world
+        assertNotEquals(5,2+2); // Проверяет на НЕРОВНО что 5 неравно 2+2
         System.out.println("1. Test finish");
 
     }
 
     @Test
-    public void testBoolean(){
+    public void testBoolean(){              // Проверяет на true or false
         assertTrue(2+2==4);
         assertFalse(2+2==5);
         System.out.println("2. Test finish");
     }
 
     @Test
-    void testNull(){
+    void testNull(){             // Проверяем на null
         assertNull(null);
         assertNotNull(" ");
         System.out.println("3. Test finish");
     }
 
     @Test
-    void testSame(){
+    void testSame(){                // Проверяем на сравнения ссылок
         String str=new String("Hello");
         String str1=new String("Hello");
         String str2=str;
 
         assertSame(str,str2);
-        assertNotSame(str,str1);
+        assertNotSame(str,str1); // антикод
         System.out.println("4. Test finish");
     }
 
     @Test
-    void testArrays(){
+    void testArrays(){              // Проверяем на массивы
         int[] array={1,2,3};
         int[] array1={1,2,3};
         int[] array2={1,2,3,4};
@@ -53,12 +53,18 @@ class CalculatorTest {
         System.out.println("5. Test finish");
     }
 
+    // Служебный метод
     @Test
     void testPrint(){
         System.out.println("Print test result....");
         System.out.println("4. Test finish");
     }
 
+    /**
+     * Анотации
+     */
+
+    // перед каждым тестом мы должны подготовить данные
     @BeforeEach
     void setUp(){
         System.out.println(">>>>BeforeEach");
@@ -82,12 +88,15 @@ class CalculatorTest {
     @Disabled
     @Test
     void add() {
+        // Позитивный методы
         System.out.println("===== positive tests add ==========");
         assertEquals(4,Calculator.add(2,2));
         assertEquals(-3,Calculator.add(2,-5));
         assertEquals(0,Calculator.add(0,0));
 
+        //Негативные методы
         System.out.println("===== negative tests add ==========");
+        // Проверка на переполнения
         int i1=2_000_000_000;
         int i2=1_000_000_000;
         assertEquals(0,Calculator.add(i1,i2));

@@ -146,6 +146,9 @@ class AnyMethodsTest {
         assertEquals(0, AnyMethods.parseAndSumElementInArray("5",arr,1));
 
         //negative
+        assertEquals(assertNull(null)
+
+
 
     }
 }
