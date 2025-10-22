@@ -44,8 +44,18 @@ public class AnyMethods {
     }
 
     public static int parseAndSumElementInArray(String s, int[] ar, int i) {
+        if (s==null || ar == null || s.isBlank() || ar.length == 0 ||
+        i < 0 || i >= ar.length || s.length() > 11 || s.length() != s.trim().length()) return 0;
+
         int n1 = ar[i];
+//        s=s.trim();
+        //проверяем на парсинг
+        if (isNotValidInt(s)) return 0;
+
         int n2 = Integer.parseInt(s);
+        long res = (long) n1 + (long) n2;
+        if(res<Integer.MIN_VALUE || res>Integer.MAX_VALUE) return 0;
+
         return n1 + n2;
     }
 

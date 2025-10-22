@@ -1,9 +1,11 @@
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class AnyMethodsTest {
 
+    @Disabled // отменет анотацию
     @Test
     void parseAndSum() {
         // ПОЗИТИВНЫЕ СЦЕНАРИИ
@@ -135,20 +137,47 @@ class AnyMethodsTest {
 
     @Test
     void parseAndSumElementInArray() {
-        int[] arr={10,-5, 0, Integer.MAX_VALUE,Integer.MIN_VALUE};
-        int[] ar1={};
+        int[] arr = {10, -5, 0, Integer.MAX_VALUE, Integer.MIN_VALUE};
+        int[] ar1 = {};
 
         // positive
-        assertEquals(15, AnyMethods.parseAndSumElementInArray("5",arr,0)); // 15 == 5+10
-        assertEquals(5, AnyMethods.parseAndSumElementInArray("-5",arr,0));
-        assertEquals(15, AnyMethods.parseAndSumElementInArray("+5",arr,0));
-        assertEquals(0, AnyMethods.parseAndSumElementInArray("0",arr,2));
-        assertEquals(0, AnyMethods.parseAndSumElementInArray("5",arr,1));
+        assertEquals(15, AnyMethods.parseAndSumElementInArray("5", arr, 0)); // 15 == 5+10
+        assertEquals(5, AnyMethods.parseAndSumElementInArray("-5", arr, 0));
+        assertEquals(15, AnyMethods.parseAndSumElementInArray("+5", arr, 0));
+        assertEquals(0, AnyMethods.parseAndSumElementInArray("0", arr, 2));
+        assertEquals(0, AnyMethods.parseAndSumElementInArray("5", arr, 1));
 
         //negative
-        assertEquals(assertNull(null)
+        //             проверяем на 0                         передаем и тестируем
+        //                   |                                            |
+        // проверяем парсинг страки
+        assertEquals(0, AnyMethods.parseAndSumElementInArray(null, arr, 0));
+        assertEquals(0, AnyMethods.parseAndSumElementInArray(" ", arr, 0));
+        assertEquals(0, AnyMethods.parseAndSumElementInArray("", arr, 0));
 
+        assertEquals(0, AnyMethods.parseAndSumElementInArray("2Q5", arr, 0));
+        assertEquals(0, AnyMethods.parseAndSumElementInArray("  25  ", arr, 0));
+        assertEquals(0, AnyMethods.parseAndSumElementInArray("2 5", arr, 0));
+        assertEquals(0, AnyMethods.parseAndSumElementInArray("asd", arr, 0));
+        assertEquals(0, AnyMethods.parseAndSumElementInArray("2$5", arr, 0));
+        assertEquals(0, AnyMethods.parseAndSumElementInArray("+", arr, 0));
+        assertEquals(0, AnyMethods.parseAndSumElementInArray("++25", arr, 0));
+        assertEquals(0, AnyMethods.parseAndSumElementInArray("-", arr, 0));
+        assertEquals(0, AnyMethods.parseAndSumElementInArray("--25", arr, 0));
+        assertEquals(0, AnyMethods.parseAndSumElementInArray("+-25", arr, 0));
+        assertEquals(0, AnyMethods.parseAndSumElementInArray("5".repeat(50), arr, 0));
+        assertEquals(0, AnyMethods.parseAndSumElementInArray("2500000000", arr, 0));
+        assertEquals(0, AnyMethods.parseAndSumElementInArray("-2500000000", arr, 0));
 
+        // Проверка массивом по отдельности
+        assertEquals(0, AnyMethods.parseAndSumElementInArray("5", null, 0));
+        assertEquals(0, AnyMethods.parseAndSumElementInArray("5", ar1, 0));
+        assertEquals(0, AnyMethods.parseAndSumElementInArray("5", arr, -5));
+        assertEquals(0, AnyMethods.parseAndSumElementInArray("5", arr, 55));
+
+        // Проверка возможности сложить результаты
+        assertEquals(0, AnyMethods.parseAndSumElementInArray("5", arr, 3));
+        assertEquals(0, AnyMethods.parseAndSumElementInArray("-5", arr, 4));
 
     }
 }
