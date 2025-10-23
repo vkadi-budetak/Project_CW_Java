@@ -4,5 +4,4 @@ public interface MyList {
     String get(int index);
     void print();
     String remove(int index);
-
 }

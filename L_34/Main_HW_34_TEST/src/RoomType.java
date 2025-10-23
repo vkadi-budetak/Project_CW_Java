@@ -33,3 +33,4 @@ public enum RoomType {
         return name + "(" + description + ", "  + basePrice + ")";
     }
 }
+
