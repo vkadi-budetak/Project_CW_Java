@@ -1,3 +1,7 @@
+/**
+ * Работа с ArrayLIST
+ */
+
 import java.util.Arrays;
 
 public class DynamicArray implements IDynamicArray{
@@ -91,6 +95,7 @@ public class DynamicArray implements IDynamicArray{
     public boolean remove(Object obj) {
         int index=indexOf(obj); // находим первый совпадающий
         // элемент и получаем его индекс
+        if (index < 0) return false;
         return remove(index) != null; // если по этому индексу смогли удалить
         // то возвращаем true а если индекс -1 то удаление не пройдет
         // и возвращаем false

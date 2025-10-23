@@ -1,6 +1,8 @@
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.Objects;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class DynamicArrayTest {
@@ -51,40 +53,91 @@ class DynamicArrayTest {
         assertFalse(numbers.add(numbers.size()+1,100));
         assertFalse(numbers.add(null,1));
 
-        // продублируйте тоже для строк
-        // допишите все тесты
+        assertTrue(strings.add("aaa", strings.size()));
+        assertTrue(strings.add("aaa", -1));
+        assertFalse(strings.add(null, -1));
 
     }
 
     @Test
-    void get() {
+    void getAtIndex() {
+        assertEquals(10, numbers.get(0));
+        assertNull(numbers.get(-555));
+
+        assertEquals("abc", strings.get(4));
+        assertNull(strings.get(-555));
+
     }
 
     @Test
     void size() {
+        assertEquals(6, numbers.size());
+        assertEquals(4, strings.size());
     }
 
     @Test
     void indexOf() {
+        assertEquals(0, numbers.indexOf(10));
+        assertEquals(-1, numbers.indexOf(-1111));
+
+
+        assertEquals(0, strings.indexOf("abc"));
+        assertEquals(-1, strings.indexOf("abcccc"));
     }
 
     @Test
     void lastIndexOf() {
+        assertEquals(5, numbers.indexOf(10));
+        assertEquals(-1, numbers.indexOf(10000));
+        assertEquals(1, numbers.indexOf(7));
+
+        assertEquals(3, strings.indexOf("abc"));
+        assertEquals(1, strings.indexOf("lmn"));
+        assertEquals(-1, strings.indexOf("abcccc"));
+        assertEquals(-1, strings.indexOf(null));
     }
 
     @Test
-    void remove() {
+    void removeAtIndex() {
+        assertEquals(7, numbers.remove(1));
+        assertEquals("abc", strings.remove(0));
+        assertNull(numbers.remove(-555));
+        assertNull(strings.remove(-5555));
+        assertEquals(5, numbers.size());
+        assertEquals(3, numbers.size());
+
     }
 
     @Test
-    void testRemove() {
+    void removeByObject() {
+        assertEquals(true, numbers.remove((Integer)7));
+        assertTrue(numbers.remove((Integer)10));
+        assertFalse(numbers.remove((Integer)7));
+
+        assertTrue(strings.remove("lmn"));
+        assertFalse(strings.remove("lmn"));
+
+        assertEquals(4, numbers.size());
+        assertEquals(3, numbers.size());
     }
 
     @Test
     void contains() {
+        assertTrue(numbers.contains(10));
+        assertTrue(strings.contains("abc"));
+
+        assertFalse(numbers.contains(10000));
+        assertFalse(strings.contains("aaaaaaaa"));
+        assertFalse(strings.contains(null));
+
     }
 
     @Test
     void toArray() {
+        Object[] expNumbers = {10, 7, 11, -2, 13, 10};
+        Object[] expString = {"abc", "lmn", "fg", "abc"};
+
+        assertArrayEquals(expNumbers, numbers.toArray());
+        assertArrayEquals(expString, strings.toArray());
     }
 }
