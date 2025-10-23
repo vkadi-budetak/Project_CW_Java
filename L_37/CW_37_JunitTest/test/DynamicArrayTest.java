@@ -54,7 +54,7 @@ class DynamicArrayTest {
         assertFalse(numbers.add(null,1));
 
         assertTrue(strings.add("aaa", strings.size()));
-        assertTrue(strings.add("aaa", -1));
+        assertFalse(strings.add("aaa", -1));
         assertFalse(strings.add(null, -1));
 
     }
@@ -64,7 +64,7 @@ class DynamicArrayTest {
         assertEquals(10, numbers.get(0));
         assertNull(numbers.get(-555));
 
-        assertEquals("abc", strings.get(4));
+        assertEquals("abc", strings.get(3));
         assertNull(strings.get(-555));
 
     }
@@ -87,14 +87,14 @@ class DynamicArrayTest {
 
     @Test
     void lastIndexOf() {
-        assertEquals(5, numbers.indexOf(10));
-        assertEquals(-1, numbers.indexOf(10000));
-        assertEquals(1, numbers.indexOf(7));
+        assertEquals(5, numbers.lastIndexOf(10));
+        assertEquals(-1,numbers.lastIndexOf(10000));
+        assertEquals(1,numbers.lastIndexOf(7));
 
-        assertEquals(3, strings.indexOf("abc"));
-        assertEquals(1, strings.indexOf("lmn"));
-        assertEquals(-1, strings.indexOf("abcccc"));
-        assertEquals(-1, strings.indexOf(null));
+        assertEquals(3,strings.lastIndexOf("abc"));
+        assertEquals(1,strings.lastIndexOf("lmn"));
+        assertEquals(-1,strings.lastIndexOf("abcccc"));
+        assertEquals(-1,strings.lastIndexOf(null));
     }
 
     @Test
@@ -104,21 +104,21 @@ class DynamicArrayTest {
         assertNull(numbers.remove(-555));
         assertNull(strings.remove(-5555));
         assertEquals(5, numbers.size());
-        assertEquals(3, numbers.size());
+        assertEquals(3, strings.size());
 
     }
 
     @Test
     void removeByObject() {
-        assertEquals(true, numbers.remove((Integer)7));
+        assertEquals(true,numbers.remove((Integer)7));
         assertTrue(numbers.remove((Integer)10));
         assertFalse(numbers.remove((Integer)7));
 
         assertTrue(strings.remove("lmn"));
         assertFalse(strings.remove("lmn"));
 
-        assertEquals(4, numbers.size());
-        assertEquals(3, numbers.size());
+        assertEquals(4,numbers.size());
+        assertEquals(3,strings.size());
     }
 
     @Test
