@@ -4,3 +4,4 @@ public class Booking {
     private MyDate end;
     private Room room;
 }
+
