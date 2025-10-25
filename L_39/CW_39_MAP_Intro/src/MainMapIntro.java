@@ -13,7 +13,7 @@ public class MainMapIntro {
         System.out.println(map);
 
         /**
-         * Методы Put
+         * Методы Put - добавления
          */
         System.out.println(map.put("Jan", 100)); // CRUD - create, read, update, and delete
         System.out.println(map);

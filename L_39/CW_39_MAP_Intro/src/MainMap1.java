@@ -46,6 +46,8 @@ public class MainMap1 {
         return res;
     }
 
+
+
     private static String[] getWords(String text) {
         return text.trim().split(" ");
 //        return text.trim().split("[^A-Za-z]+"); // adv**************
