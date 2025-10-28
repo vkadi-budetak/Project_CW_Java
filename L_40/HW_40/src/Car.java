@@ -57,7 +57,6 @@ public class Car implements Comparable<Car> {
     @Override
     public final boolean equals(Object o) {
         if (!(o instanceof Car car)) return false;
-
         return Objects.equals(serialNumber, car.serialNumber);
     }
 
