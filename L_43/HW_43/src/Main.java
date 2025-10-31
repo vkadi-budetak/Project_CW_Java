@@ -56,23 +56,7 @@ public class Main {
         for (int i = words.length - 1; i >= 0; i--) {
             System.out.print(words[i]);
         }
-
     }
-
-    private static boolean isPalindrom(String s) {
-// StringBuilder
-//        String reversed = new StringBuilder(s).reverse().toString();
-//        return s.equalsIgnoreCase(reversed);
-
-        int len = s.toLowerCase().length();
-        for (int i = 0; i < len / 2; i++) {
-            if (s.charAt(i) != s.charAt(len - 1 - i)) {
-                return false;
-            }
-        }
-        return true;
-    }
-
 
     private static void reversStringR(String s) {
         if (s == null || s.length() <= 1) {
@@ -83,6 +67,19 @@ public class Main {
         System.out.print(s.charAt(0));
     }
 
+    private static boolean isPalindrom(String s) {
+// StringBuilder
+//        String reversed = new StringBuilder(s).reverse().toString();
+//        return s.equalsIgnoreCase(reversed);
+
+        int len = s.toLowerCase().length();
+        for (int i = 0, j = s.length()-1; i < j; i++, j--) {
+            if (s.charAt(i) != s.charAt(j)) {
+                return false;
+            }
+        }
+        return true;
+    }
 
     private static boolean isPalindromR(String s) {
         s = s.toLowerCase();
@@ -91,7 +88,6 @@ public class Main {
             return false;
         }
         return isPalindromR(s.substring(1, s.length() - 1));
-
     }
 
 
