@@ -8,7 +8,7 @@ public class MainEmail {
         while (true) {
             try {
                 System.out.print("Введите ваш email: ");
-                String emailInput = scanner.nextLine();
+                String emailInput = scanner.nextLine().trim();
 
                 Email email = new Email(emailInput);
 
@@ -44,3 +44,4 @@ NotCorrectEmailFormatException.
 В зависимости от результата, вызывающий main выводить результат работы или сообщение
 «Программист занят другой задачей» или «Программист не доступен».
  */
+

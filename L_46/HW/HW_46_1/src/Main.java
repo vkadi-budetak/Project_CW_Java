@@ -7,7 +7,7 @@ public class Main {
 
         while (true) {
             System.out.print("Введите ваш email: ");
-            String email = scanner.nextLine();
+            String email = scanner.nextLine().trim();
 
             if (email.length() >= 5 &&
                     email.contains("@") &&
