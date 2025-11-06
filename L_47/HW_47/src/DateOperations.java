@@ -21,7 +21,6 @@ public class DateOperations {
      * @return full age in the years relatively the given current date if
      * currentDate is null the LocalDate.now() is applied
      */
-
     // повний вік у роках відносно заданої поточної дати
     public static int getAge(String birthDate, String currentDate) {
 
