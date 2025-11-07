@@ -118,7 +118,7 @@ public class MainTimeIntro {
         System.out.println(dt2);
 
         // Formatter
-//        LocalDate date13 = LocalDate.parse("09/09/2020"); // ERROR
+//        LocalDate date13 = LocalDate.parse("09/09/2020"); // ERROR - не розпаврсит если не ISO
 
         /*
         как формируються
